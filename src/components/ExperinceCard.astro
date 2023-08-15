@@ -1,0 +1,27 @@
+---
+import type { Experience } from "@/data/experience";
+
+type Props = Experience;
+
+const { company, startDate, endDate, role, description } = Astro.props;
+---
+
+<div
+  class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400"
+>
+  <div class="flex flex-row gap-4">
+    <p class="text-neutral-100">{company}</p>
+    {
+      role && (
+        <>
+          <p>|</p>
+          <p>{role}</p>
+        </>
+      )
+    }
+  </div>
+  <div class="flex flex-col gap-2">
+    <p class="text-neutral-100">{startDate} - {endDate}</p>
+    <p class="text-neutral-100">{description}</p>
+  </div>
+</div>
