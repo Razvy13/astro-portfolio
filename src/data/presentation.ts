@@ -21,8 +21,8 @@ const presentation: Presentation = {
       link: "https://twitter.com/razvan_dim",
     },
     {
-      label: "Instagram",
-      link: "https://www.instagram.com/razvan.dimulescu",
+      label: "Linkedin",
+      link: "https://www.linkedin.com/in/razvan-titus-dimulescu/",
     },
     {
       label: "Github",
