@@ -1,6 +1,6 @@
 ---
-import { SEO } from "astro-seo";
 import { SITE_URL } from "@/data/config";
+import { SEO } from "astro-seo";
 
 type Props = {
   title?: string;
@@ -55,6 +55,10 @@ const openGraph = {
       link: [
         { rel: "icon", href: "/favicon.svg" },
         { rel: "sitemap", href: "/sitemap-index.xml" },
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css",
+        },
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },

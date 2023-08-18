@@ -12,7 +12,7 @@ type Presentation = {
 
 const presentation: Presentation = {
   mail: "razvan.dimulescu@gmail.com",
-  title: "Hi, I’m Raz 👋",
+  title: "Hi, I'm Raz 👋",
   description:
     "My name is *Razvan Dimulescu* and I'm a *Frontend Developer*. I'm from Romania, living in Italy and currently working with *Angular* and *TaigaUI* at Aton Spa. Outside of work you can find me on *mountain* snowboarding, hiking or climbing.",
   socials: [

@@ -7,6 +7,7 @@ import Layout from "@/layouts/Layout.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import ExperinceCard from "@/components/ExperinceCard.astro";
+import Skills from "@/components/Skills.astro";
 import experiences from "@/data/experience";
 import presentation from "@/data/presentation";
 
@@ -34,6 +35,16 @@ const posts = await getCollection("posts");
           experiences.length !== 0 &&
             experiences.map((experience) => <ExperinceCard {...experience} />)
         }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Skills</h3>
+      </header>
+
+      <section class="flex flex-col gap-4">
+        <Skills />
       </section>
     </article>
 
