@@ -32,6 +32,10 @@ const skills: Skill[] = [
     name: "npm",
     iconClass: "devicon-npm-original-wordmark",
   },
+  {
+    name: "Git",
+    iconClass: "devicon-git-plain",
+  },
 ];
 
 export default skills;
